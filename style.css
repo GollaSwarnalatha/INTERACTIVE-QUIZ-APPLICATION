@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 1rem;
+}
+
+.quiz-container {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.question-number {
+  font-size: 1.1rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.score {
+  background: #f8f9fa;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  color: #4c1d95;
+  font-weight: 600;
+}
+
+.question {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.option {
+  padding: 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.option:hover:not(.disabled) {
+  border-color: #818cf8;
+  background: #f8fafc;
+}
+
+.option.correct {
+  background: #dcfce7;
+  border-color: #22c55e;
+}
+
+.option.wrong {
+  background: #fee2e2;
+  border-color: #ef4444;
+}
+
+.option.disabled {
+  cursor: default;
+}
+
+.next-btn {
+  display: none;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.next-btn:hover {
+  background: #4338ca;
+}
+
+.result-container {
+  text-align: center;
+  display: none;
+}
+
+.result-container h2 {
+  font-size: 2rem;
+  color: #4c1d95;
+  margin-bottom: 1rem;
+}
+
+.result-container .score-text {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.result-container .percentage {
+  font-size: 3rem;
+  color: #5bce51;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.restart-btn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.restart-btn:hover {
+  background: #4338ca;
+}
+
+.feedback-icon {
+  display: none;
+  width: 24px;
+  height: 24px;
+}
+
+.option.correct .feedback-icon.correct,
+.option.wrong .feedback-icon.wrong {
+  display: block;
+}
