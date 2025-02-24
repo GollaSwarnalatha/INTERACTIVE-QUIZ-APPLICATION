@@ -81,4 +81,3 @@ THIS QUIZ APPLICATION SHOWCASES THE POWER OF WEB TECHNOLOGIES IN CREATING A MODE
 ![Image](https://github.com/user-attachments/assets/b973e672-4156-4041-a6aa-7e2897999409)
 
 ![Image](https://github.com/user-attachments/assets/370a4465-4940-40d9-8659-f66547d08024)
-
